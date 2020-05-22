@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <label>(R) Vermelho: </label>
+    <input id="rRedColor" type="range" onChange="FullColorRGB()" value=0 min=0 max=255>
+    <input id="vRedColor" class="inputValue" type="text" disabled>
+    <br>
+    <label>(G) Verde: </label>
+    <input id="rGreenColor" type="range" onChange="FullColorRGB()" value=0 min=0 max=255>
+    <input id="vGreenColor" class="inputValue" type="text" disabled>
+    <br>
+    <label>(B) Azul: </label>
+    <input id="rBlueColor" type="range" onChange="FullColorRGB()" value=0 min=0 max=255>
+    <input id="vBlueColor" class="inputValue" type="text" disabled>
+    <br>
+    <div id="targetRGB"></div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
